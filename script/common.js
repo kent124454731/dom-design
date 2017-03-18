@@ -1,9 +1,13 @@
 /**
- * Created by Administrator on 2017/3/15.
+ * js通用方法
+ * @Author Kent.Wang
+ * @Date 2017-03-15 10:36:56
  */
+
+
 /**
  * 文档加载事件
- * @param func
+ * @param func 需要加载的方法
  */
 function addLoadEvent(func) {
     var oldOnload = window.onload;

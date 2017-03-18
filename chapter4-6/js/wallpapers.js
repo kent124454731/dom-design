@@ -51,7 +51,7 @@ function preparePlaceHolder() {
     if (!document.getElementById) return false;
     var placeholder = document.createElement("img");
     placeholder.setAttribute("id", "placeholder");
-    placeholder.setAttribute("src", "chapter4-6/images/leimu.jpg");
+    placeholder.setAttribute("src", "images/leimu.jpg");
     placeholder.setAttribute("alt", "蕾姆");
     var body = document.getElementsByTagName("body")[0];
     var description = document.createElement("p");
