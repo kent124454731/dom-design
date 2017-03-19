@@ -48,5 +48,5 @@ function displayCitations() {
     }
 }
 
-addLoadEvent(displayAbbreviations());
 addLoadEvent(displayCitations());
+addLoadEvent(displayAbbreviations());

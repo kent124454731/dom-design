@@ -32,5 +32,81 @@ function insertAfter(newElement, targetElement) {
     } else {
         parent.insertBefore(newElement, targetElement.nextSibling);
     }
+}
 
+/**
+ * 获取当前节点的下一个元素节点
+ * nextSibling为获取下一个节点（节点有三种：元素节点、文本节点和属性节点）
+ * @param node
+ * @returns {*}
+ */
+function getNextElement(node) {
+    if (node.nodeType == 1) {
+        return node;
+    }
+    if (node.nextSibling) {
+        return getNextElement(node.nextSibling);
+    }
+    return null;
+}
+
+/**
+ * 显示略缩词
+ */
+function displayAbbreviations() {
+    //取得所有略缩词
+    var abbrs = document.getElementsByTagName("abbr");
+    if (abbrs && abbrs.length > 0) {
+        var body = document.body;
+        var headers = document.createElement("h2");
+        var headers_text = document.createTextNode("Abbreviations")
+        headers.appendChild(headers_text);
+        body.appendChild(headers);
+        var dl = document.createElement("dl");
+        body.appendChild(dl);
+        //遍历略缩词并将他们添加到创建标记列表
+        for (var i = 0; i < abbrs.length; i++) {
+            var abbr = abbrs[i];
+            var dt = document.createElement("dt");
+            dt.innerHTML = abbr.lastChild.nodeValue;
+            var dd = document.createElement("dd");
+            dd.innerHTML = abbr.getAttribute("title");
+            dl.appendChild(dt);
+            dl.appendChild(dd);
+        }
+    }
+}
+
+/**
+ * 给指定的element追加样式
+ * @param element
+ * @param value
+ */
+function addClass(element, value) {
+    if (!element.className) {
+        element.className = value;
+    }
+    else {
+        var newClass = element.className;
+        newClass += " ";
+        newClass += value;
+        element.className = newClass;
+    }
+}
+
+
+/**
+ * 根据参数tag查找他们所有的下一个元素，并追加样式className
+ * @param tag
+ * @param className
+ * @returns {boolean}
+ */
+function styleElementSiblings(tag, className) {
+    if (!document.getElementsByTagName)return false;
+    var elements = document.getElementsByTagName(tag);
+    var elem;
+    for (var i = 0; i < elements.length; i++) {
+        elem = getNextElement(elements[i].nextSibling);
+        addClass(elem, className);
+    }
 }
