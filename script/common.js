@@ -110,3 +110,72 @@ function styleElementSiblings(tag, className) {
         addClass(elem, className);
     }
 }
+
+/**
+ * 标签移动
+ * @param elementId
+ * @param final_x
+ * @param final_y
+ * @param interval
+ * @returns {boolean}
+ */
+function moveElement(elementId, final_x, final_y, interval) {
+    if (!document.getElementById)return false;
+    var element = document.getElementById(elementId);
+    if(element.movement){
+        clearTimeout(element.movement);
+    }
+    if (!element.style.left) {
+        element.style.left = "0px";
+    }
+    if (!element.style.right) {
+        element.style.right = "0px";
+    }
+    var xpos = parseInt(element.style.left);
+    var ypos = parseInt(element.style.top);
+    if (xpos == final_x && ypos == final_y) {
+        return true;
+    }
+    var dist = 0;
+    if (xpos < final_x) {
+        dist = Math.ceil((final_x - xpos) / 10);
+        xpos += dist;
+    }
+    if (xpos > final_x) {
+        dist = Math.ceil((xpos - final_x) / 10);
+        xpos -= dist;
+    }
+    if (ypos < final_y) {
+        dist = Math.ceil((final_y - ypos) / 10);
+        ypos += dist;
+    }
+    if (ypos > final_y) {
+        dist = Math.ceil((ypos - final_y) / 10);
+        ypos -= dist;
+    }
+    element.style.left = xpos + "px";
+    element.style.top = ypos + "px";
+    var repeat = "moveElement('" + elementId + "', " + final_x + ", " + final_y + ", " + interval + ")";
+    //强烈注意，setTimeout的一个参数是接受一个字符串形式的函数,setTimeout仅执行一次
+    //若传入参数为函数的调用，则实际上setTimeout接收到的是函数的返回值，这个是不正确的，故传入带有引号的函数调用是合理的
+    // var repeat2 = moveElement(elementId,final_x,final_y,interval);
+    element.movement = setTimeout(repeat, interval);
+}
+
+/**
+ * 查询在当前数组中是否存在目标元素
+ * @param arrs
+ * @param item
+ * @returns {*}
+ */
+function arrayIndexOf(arrs,item) {
+    if(!arrs) return false;
+    if(!arrs.length) return false;
+    for(var i=0;i<arrs.length;i++){
+        if(item==arrs[i])
+        {
+            return i;
+        }
+    }
+    return -1;
+}
