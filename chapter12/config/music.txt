@@ -1,0 +1,28 @@
+[{
+      "name": "一次就好",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E4%B8%80%E6%AC%A1%E5%B0%B1%E5%A5%BD.mp3"
+  },
+ {
+      "name": "十年",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E5%8D%81%E5%B9%B4.mp3"
+ },
+ {
+      "name": "无赖",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E6%97%A0%E8%B5%96.mp3"
+ },
+ {
+      "name": "心肝宝贝",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E5%BF%83%E8%82%9D%E5%AE%9D%E8%B4%9D.mp3"
+ },
+ {
+      "name": "忘记时间",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E5%BF%98%E8%AE%B0%E6%97%B6%E9%97%B4.mp3"
+ },
+ {
+      "name": "十七岁",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E5%8D%81%E4%B8%83%E5%B2%81.mp3"
+ },
+ {
+      "name": "一往情深的恋人",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E4%B8%80%E5%BE%80%E6%83%85%E6%B7%B1%E7%9A%84%E6%81%8B%E4%BA%BA.mp3"
+ }]
