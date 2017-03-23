@@ -25,4 +25,9 @@
  {
       "name": "一往情深的恋人",
       "url": "http://on5rm56pj.bkt.clouddn.com/%E4%B8%80%E5%BE%80%E6%83%85%E6%B7%B1%E7%9A%84%E6%81%8B%E4%BA%BA.mp3"
- }]
+ },
+ {
+      "name": "宁夏",
+      "url": "http://on5rm56pj.bkt.clouddn.com/%E5%AE%81%E5%A4%8F.mp3"
+ }
+ ]
