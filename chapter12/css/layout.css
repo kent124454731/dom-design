@@ -23,49 +23,85 @@ header {
     background-position: bottom right;
     border-width: .1em;
     border-styly: solid;
-    background-size:cover;
+    background-size: cover;
     border-bottom-width: 0;
 }
-header img{
-    width:100%;
+
+header img {
+    width: 100%;
 }
 
 header nav {
     background-image: url(../images/logo.jpg);
     background-position: bottom left;
     background-repeat: repeat-x;
-    border-width:.1em;
-    border-style:solid;
-    border-bottom-width:0;
-    border-top-width:0;
-    padding-left:10%;
+    border-width: .1em;
+    border-style: solid;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    padding-left: 10%;
 }
-header nav ul{
-    width:100%;
-    overflow:hidden;
-    border-left-width:.1em;
-    border-left-style:solid;
+
+header nav ul {
+    width: 100%;
+    overflow: hidden;
+    border-left-width: .1em;
+    border-left-style: solid;
 }
-header nav li{
-    display:inline;
+
+header nav li {
+    display: inline;
 }
+
 header nav li a {
-    display:block;
-    float:left;
-    padding:.5em 2em;
-    border-right:.1em solid;
+    display: block;
+    float: left;
+    padding: .5em 2em;
+    border-right: .1em solid;
 }
+
 article {
-    border-width:.1em;
-    border-style:solid;
-    border-top-width:0;
-    padding:2em 10%;
-    line-height:1.8em;
+    border-width: .1em;
+    border-style: solid;
+    border-top-width: 0;
+    padding: 2em 10%;
+    line-height: 1.8em;
 }
-article img{
-    border-width:.1em;
-    border-style:solid;
-    outline-width:.1em;
-    outline-style:solid;
+
+article img {
+    border-width: .1em;
+    border-style: solid;
+    outline-width: .1em;
+    outline-style: solid;
+}
+
+#about header {
+    background-image: url(../images/bg2.jpg);
+}
+
+#contact header {
+    background-image: url(../images/bg3.jpg);
+}
+
+#photos header {
+    background-image: url(../images/bg4.jpg);
+}
+
+#live header {
+    background-image: url(../images/bg5.jpg);
+}
+
+#misic_ul {
+    position: relative;
+}
+
+#music_ul li {
+    float: left;
+    padding: 1em;
+    list-style: none;
+}
+
+#div_list {
+    height: 200px;
 }
 

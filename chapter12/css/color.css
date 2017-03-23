@@ -2,22 +2,6 @@ body {
     color: #fb5;
     background-color: #334;
 }
-a:link {
-    color: #445;
-    background-color: #eb5
-}
-a:visited{
-    color:#345;
-    background-color: #eb6;
-}
-a:hover{
-    color:#667;
-    background-color: #fb5;
-}
-a:active{
-    color:#778;
-    background-color:#ec8;
-}
 header{
     color:#ec8;
     background-color: #334;
@@ -49,6 +33,31 @@ header nav a:active{
     color:#667;
     background-color:#ec8;
 }
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active {
+    color: #eef;
+    background-color: green;
+}
+
+/*header nav a:link {*/
+    /*color: #445;*/
+    /*background-color: #eb5*/
+/*}*/
+/*header nav a:visited{*/
+    /*color:#345;*/
+    /*background-color: transparent;*/
+/*}*/
+/*header nav a:hover{*/
+    /*color:#667;*/
+    /*background-color: #fb5;*/
+/*}*/
+/*header nav a:active{*/
+    /*color:#778;*/
+    /*background-color:#ec8;*/
+/*}*/
+
 article img{
     border-color:#ba9;
     outline-color:#dcb;
